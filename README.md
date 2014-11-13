@@ -1,6 +1,11 @@
 # Loopback Example: ionic
 This example application demonstates how to use [LoopBack](http://loopback.io) with the [Ionic Framework](http://ionicframework.com/)
 ##Features
+Looper is a basic microblogging clone with following features:
+- Users can register and login to the app
+- Only authorized user can see content
+- Post, like and comment tweets
+- User can choose an avatar
 
 
 ###Screenshots
@@ -29,7 +34,7 @@ Open [localhost:8100](http://localhost:8100/) in your browser to view the app or
 
 ##ToDo
 - Implement Passport.Js for FacebookAuth
-- Optimize Performence (less requests to server)
+- Optimize performence (less requests to server)
 - Add feature like edit, delete...
 
 ##Usefull commands
