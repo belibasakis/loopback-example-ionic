@@ -1,7 +1,7 @@
 # Loopback Example: ionic
-This example application demonstates how to use [LoopBack](http://loopback.io) with the [Ionic](http://ionicframework.com/)
-It's a simple Twitter clone.
-//TODO
+This example application demonstates how to use [LoopBack](http://loopback.io) with the [Ionic Framework](http://ionicframework.com/)
+##Features
+
 
 ###Screenshots
 //TODO
@@ -27,6 +27,15 @@ ionic serve
 ```
 Open [localhost:8100](http://localhost:8100/) in your browser to view the app or get the (PhoneGap Developer App)[http://app.phonegap.com/] to run the app on your phone.
 
+##Usefull commands
+- `lb-ng server/server.js client/www/lib/lb-services.js`to generate Loopback Service for AngularJS based on your project
+- `lb-ng-doc client/www/lib/lb-services.js` show documentation for generated file
+- 
+##ToDo
+- Implement Passport.Js for FacebookAuth
+- Optimize Performence (less requests to server)
+- Add feature like edit, delete...
+
 ###Loopback Database Schema
 - `avatar`
   - id number 
@@ -49,8 +58,8 @@ Open [localhost:8100](http://localhost:8100/) in your browser to view the app or
   - avatar string
 - `like` 
   - id number   
-### Loopback Model Relation
 
+### Loopback Model Relation
 - `comments`
   - belongsTo
     - tweet (foreignKey: tweetId)
