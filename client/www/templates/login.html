@@ -1,0 +1,26 @@
+<ion-view title="Looper">
+    <ion-content>
+        <form novalidate="novalidate" name="loginForm">
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <i class="icon ion-ios7-person"></i>
+                    <input type="text" name="username" placeholder="E-mail or username" ng-model="credentials.username"
+                           required>
+                </label>
+                <label class="item item-input">
+                    <i class="icon ion-ios7-locked"></i>
+                    <input type="password" name="password" placeholder="Password" ng-model="credentials.password"
+                           required>
+                </label>
+            </div>
+            <div class="padding">
+                <button ng-disabled="!loginForm.$valid" class="button icon ion-log-in button-block button-royal"
+                        ng-click="login()">
+                    Login
+                </button>
+                <button class="button button-block button-royal button-outline" ng-click="goToRegister()">Don't have an account yet?</button>
+
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,33 @@
+{
+  "name": "user",
+  "base": "User",
+  "properties": {
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "avatar": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tweets": {
+      "type": "hasMany",
+      "model": "tweet",
+      "foreignKey": "ownerId"
+    },
+    "likes": {
+      "type": "hasMany",
+      "model": "like",
+      "foreignKey": "ownerId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

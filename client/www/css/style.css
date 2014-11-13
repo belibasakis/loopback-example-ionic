@@ -1,0 +1,21 @@
+/* Empty. Add your own CSS if you like */
+.date {
+    float: right;
+}
+
+.btnFeed{
+    text-align: right;
+}
+
+.btnFeed button{
+    width: 50px;
+    font-size: 15px;
+}
+.row img{
+    width: 100%;
+}
+.avatar-active{
+    background-color: #A5D6A7;
+    -webkit-box-shadow: 0 0 5px 2px #4CAF50;
+    box-shadow: 0 0 5px 2px #4CAF50;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "comment",
+  "base": "PersistedModel",
+  "properties": {
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "username": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tweet": {
+      "type": "belongsTo",
+      "model": "tweet",
+      "foreignKey": "tweetId"
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "ownerId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

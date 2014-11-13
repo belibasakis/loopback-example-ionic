@@ -1,0 +1,20 @@
+{
+  "name": "like",
+  "base": "PersistedModel",
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "tweet": {
+      "type": "belongsTo",
+      "model": "tweet",
+      "foreignKey": "tweetId"
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "ownerId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

@@ -1,0 +1,33 @@
+<ion-view title="Tweet Detail" >
+    <ion-content padding="false">
+        <ion-item class="item-avatar-left">
+            <img src="img/ionic.png">
+            <h2>{{tweet.ownerUsername}}<p class="date">{{tweet.date | timeDistance}}</p></h2>
+            <p>
+                <!--<blockquote style="padding-top: 0px; padding-bottom: 0px; margin-bottom: 0px; text-align: justify;"></blockquote>-->
+                {{tweet.content}}
+            </p>
+        </ion-item>
+
+        <h4 style="margin-left: 10px">Comments</h4>
+        <div class="list card">
+            <div ng-repeat="comment in comments" class="item item-avatar" style="padding-top: 10px; padding-bottom:10px;">
+                <img src="img/ionic.png">
+                <h2>{{comment.username}}<p class="date">{{comment.date | timeDistance}}</p></h2>
+                <p>{{comment.content}}</p>
+            </div>
+
+        </div>
+
+    </ion-content>
+    <form novalidate="novalidate" name="commentForm">
+        <ion-footer-bar keyboard-attach class="bar-stable item-input-inset">
+            <label class="item-input-wrapper">
+                <input type="text" placeholder="Type your comment" ng-model="newComment.content" required/>
+            </label>
+            <button ng-disabled="!commentForm.$valid" class="button button-clear " ng-click="saveComment()">
+                Send
+            </button>
+        </ion-footer-bar>
+    </form>
+</ion-view>

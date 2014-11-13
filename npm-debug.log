@@ -1,0 +1,92 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'passport-faceboo',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json api@0.0.0 No description
+6 warn package.json api@0.0.0 No repository field.
+7 warn package.json api@0.0.0 No README data
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'passport-faceboo', null ]
+10 verbose cache add name=undefined spec="passport-faceboo" args=["passport-faceboo",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'passport-faceboo',
+11 verbose parsed url   path: 'passport-faceboo',
+11 verbose parsed url   href: 'passport-faceboo' }
+12 silly lockFile 8a732f6c-passport-faceboo passport-faceboo
+13 verbose lock passport-faceboo C:\Users\Philip\AppData\Roaming\npm-cache\8a732f6c-passport-faceboo.lock
+14 silly lockFile 8a732f6c-passport-faceboo passport-faceboo
+15 silly lockFile 8a732f6c-passport-faceboo passport-faceboo
+16 verbose addNamed [ 'passport-faceboo', '' ]
+17 verbose addNamed [ null, '*' ]
+18 silly lockFile 6b15e839-passport-faceboo passport-faceboo@
+19 verbose lock passport-faceboo@ C:\Users\Philip\AppData\Roaming\npm-cache\6b15e839-passport-faceboo.lock
+20 silly addNameRange { name: 'passport-faceboo', range: '*', hasData: false }
+21 verbose request where is /passport-faceboo
+22 verbose request registry https://registry.npmjs.org/
+23 verbose request id 6971e97d98893afb
+24 verbose url raw /passport-faceboo
+25 verbose url resolving [ 'https://registry.npmjs.org/', './passport-faceboo' ]
+26 verbose url resolved https://registry.npmjs.org/passport-faceboo
+27 verbose request where is https://registry.npmjs.org/passport-faceboo
+28 info trying registry request attempt 1 at 21:08:52
+29 http GET https://registry.npmjs.org/passport-faceboo
+30 http 404 https://registry.npmjs.org/passport-faceboo
+31 verbose headers { date: 'Thu, 13 Nov 2014 20:08:46 GMT',
+31 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'cache-control': 'max-age=0',
+31 verbose headers   'content-length': '52',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   age: '0',
+31 verbose headers   'x-served-by': 'cache-ams4146-AMS',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1415909325.459684,VS0,VE670',
+31 verbose headers   'keep-alive': 'timeout=10, max=50',
+31 verbose headers   connection: 'Keep-Alive' }
+32 silly registry.get cb [ 404,
+32 silly registry.get   { date: 'Thu, 13 Nov 2014 20:08:46 GMT',
+32 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+32 silly registry.get     'content-type': 'application/json',
+32 silly registry.get     'cache-control': 'max-age=0',
+32 silly registry.get     'content-length': '52',
+32 silly registry.get     'accept-ranges': 'bytes',
+32 silly registry.get     via: '1.1 varnish',
+32 silly registry.get     age: '0',
+32 silly registry.get     'x-served-by': 'cache-ams4146-AMS',
+32 silly registry.get     'x-cache': 'MISS',
+32 silly registry.get     'x-cache-hits': '0',
+32 silly registry.get     'x-timer': 'S1415909325.459684,VS0,VE670',
+32 silly registry.get     'keep-alive': 'timeout=10, max=50',
+32 silly registry.get     connection: 'Keep-Alive' } ]
+33 silly lockFile 6b15e839-passport-faceboo passport-faceboo@
+34 silly lockFile 6b15e839-passport-faceboo passport-faceboo@
+35 error 404 404 Not Found: passport-faceboo
+35 error 404
+35 error 404 'passport-faceboo' is not in the npm registry.
+35 error 404 You should bug the author to publish it
+35 error 404 It was specified as a dependency of 'api'
+35 error 404
+35 error 404 Note that you can also install from a
+35 error 404 tarball, folder, or http url, or git url.
+36 error System Windows_NT 6.2.9200
+37 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "passport-faceboo" "--save"
+38 error cwd D:\Dropbox\GitHub\looper\api
+39 error node -v v0.10.33
+40 error npm -v 1.4.28
+41 error code E404
+42 verbose exit [ 1, true ]

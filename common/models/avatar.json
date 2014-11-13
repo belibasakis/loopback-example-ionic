@@ -1,0 +1,19 @@
+{
+  "name": "avatar",
+  "plural": "avatar",
+  "base": "PersistedModel",
+  "properties": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "ownerId": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

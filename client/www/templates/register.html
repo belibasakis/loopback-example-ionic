@@ -1,0 +1,49 @@
+<ion-view title="Register">
+    <ion-content>
+        <form novalidate="novalidate" name="registerForm">
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <i class="icon ion-ios7-person"></i>
+                    <input type="text" placeholder="Username" name="username" ng-model="registration.username" required>
+                </label>
+                <label class="item item-input">
+                    <i class="icon ion-email"></i>
+                    <input type="email" placeholder="E-mail" name="email" ng-model="registration.email" required>
+                </label>
+                <label class="item item-input">
+                    <i class="icon ion-ios7-locked"></i>
+                    <input type="password" placeholder="Password" name="password" ng-model="registration.password"
+                           required>
+                </label>
+            </div>
+            <div class="padding">
+                <h3>Choose your avatar</h3>
+                <div class="row">
+                    <div class="col"  ng-repeat="i in [1,2,3,4]">
+                        <img ng-src="img/avatar/{{i}}.png" ng-click="$parent.avatar.id={{i}}" ng-class="$parent.avatar.id==={{i}} ? 'avatar-active':''"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"  ng-repeat="i in [5,6,7,8]">
+                        <img ng-src="img/avatar/{{i}}.png" ng-click="$parent.avatar.id={{i}}" ng-class="$parent.avatar.id==={{i}} ? 'avatar-active':''"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"  ng-repeat="i in [9,10,11,12]">
+                        <img ng-src="img/avatar/{{i}}.png" ng-click="$parent.avatar.id={{i}}" ng-class="$parent.avatar.id==={{i}} ? 'avatar-active':''"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"  ng-repeat="i in [13,14,15,16]">
+                        <img ng-src="img/avatar/{{i}}.png" ng-click="$parent.avatar.id={{i}}" ng-class="$parent.avatar.id==={{i}} ? 'avatar-active':''"/>
+                    </div>
+                </div>
+
+                <button ng-disabled="!registerForm.$valid || !avatar.id" ng-click="register()"
+                        class="button icon ion-compose button-block button-outline button-royal">
+                    Register
+                </button>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

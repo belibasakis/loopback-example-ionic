@@ -1,0 +1,47 @@
+<ion-view title="Looper">
+    <ion-content padding="false">
+        <ion-refresher
+                pulling-text="Pull to refresh..."
+                on-refresh="refresh()">
+        </ion-refresher>
+        {{getCount().count}}
+        <ion-list ng-repeat="tweet in tweets">
+            <!--- Tweet -->
+            <ion-item class="item-avatar-left">
+                <img ng-src="{{tweet.avatar}}">
+
+                <h2>{{tweet.ownerUsername}}<p class="date">{{tweet.date | timeDistance}}</p></h2>
+                <p>
+                    <!--<blockquote style="padding-top: 0px; padding-bottom: 0px; margin-bottom: 0px; text-align: justify;"></blockquote>-->
+                    {{tweet.content}}
+                </p>
+
+                <div class="btnFeed">
+                    <button ng-class="tweet.userLikedTweet ? 'button button-small button-royal' : 'button button-small button-outline button-balanced'" ng-click="like({{$index}})">
+                        {{tweet.likes}}
+                        <i class="ion-ios7-star"></i></a>
+                    </button>
+                    <button class="button button-small button-balanced button-outline" ng-click="go('/tab/tweet/{{tweet.id}}')">
+                        {{tweet.comments}}
+                        <i class="ion-chatboxes"></i></a>
+                    </button>
+                </div>
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll
+                ng-if="!noMoreTweets"
+                on-infinite="loadMore()">
+        </ion-infinite-scroll>
+    </ion-content>
+    <form novalidate="novalidate" name="tweetForm">
+        <ion-footer-bar keyboard-attach class="bar-stable item-input-inset">
+            <label class="item-input-wrapper">
+                <input type="text" placeholder="Type your tweet" ng-model="newTweet.content" required/>
+            </label>
+            <button ng-disabled="!tweetForm.$valid" class="button button-clear " ng-click="saveTweet()">
+                Send
+            </button>
+        </ion-footer-bar>
+    </form>
+
+</ion-view>

@@ -1,0 +1,38 @@
+{
+  "name": "tweet",
+  "base": "PersistedModel",
+  "properties": {
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "ownerUsername": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "ownerId"
+    },
+    "comments": {
+      "type": "hasMany",
+      "model": "comment",
+      "foreignKey": "tweetId"
+    },
+    "likes": {
+      "type": "hasMany",
+      "model": "like",
+      "foreignKey": "tweetId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
