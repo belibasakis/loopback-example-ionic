@@ -27,14 +27,14 @@ ionic serve
 ```
 Open [localhost:8100](http://localhost:8100/) in your browser to view the app or get the (PhoneGap Developer App)[http://app.phonegap.com/] to run the app on your phone.
 
-##Usefull commands
-- `lb-ng server/server.js client/www/lib/lb-services.js`to generate Loopback Service for AngularJS based on your project
-- `lb-ng-doc client/www/lib/lb-services.js` show documentation for generated file
-- 
 ##ToDo
 - Implement Passport.Js for FacebookAuth
 - Optimize Performence (less requests to server)
 - Add feature like edit, delete...
+
+##Usefull commands
+- `lb-ng server/server.js client/www/lib/lb-services.js`to generate Loopback Service for AngularJS based on your project
+- `lb-ng-doc client/www/lib/lb-services.js` show documentation for generated file
 
 ###Loopback Database Schema
 - `avatar`
@@ -80,3 +80,5 @@ Open [localhost:8100](http://localhost:8100/) in your browser to view the app or
     - tweet (foreignKey: tweetId)
 
 ### Other ressources used
+- custom time filter for angular https://github.com/B-Sides/angular-timedistance
+- pictures used in this app http://www.deviantart.com/art/Face-Avatars-107881096
