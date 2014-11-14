@@ -9,7 +9,7 @@ Looper is a basic microblogging clone with following features:
 
 
 ###Screenshots
-![Alt text]( "screenshots.png")
+![Alt text](screenshots.png)
 
 ##Prerequisites
 Before starting, makes sure you've followed [Getting Started with LoopBack](http://docs.strongloop.com/display/LB/Getting+started+with+LoopBack) to install Node and LoopBack.
