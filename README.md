@@ -53,12 +53,11 @@ By default, data in the memory connector are transient.  When an application usi
 }
 ```
 I created some sample content and user so you can start right of:
-|Username|Password|
-|--------|--------|
-|James   |james   |
-|Bob     |bob     |
-|Mary    |mary    |
-
+| Username | Password |
+| -------- | -------- |
+| James    | james    |
+| Bob      | bob      |
+| Mary     | mary     |
 
 ###Usefull commands
 - `lb-ng server/server.js client/www/lib/lb-services.js`to generate Loopback Service for AngularJS based on your project
