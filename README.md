@@ -11,13 +11,12 @@ Looper is a basic microblogging clone with following features:
 ###Screenshots
 ![Alt text](screenshots.png)
 
-##Prerequisites
+##Getting started
 Before starting, makes sure you've followed [Getting Started with LoopBack](http://docs.strongloop.com/display/LB/Getting+started+with+LoopBack) to install Node and LoopBack.
 In adittion, you will need a basic understanding of:
  - [AngularJs](https://angularjs.org/)
  - Ionic [CSS](http://ionicframework.com/docs/components/) and [Javascript](http://ionicframework.com/docs/api/) components  
 
-### Getting started
 ```
 git clone https://github.com/belibasakis/loopback-example-ionic
 cd loopback-example-ionic
@@ -53,11 +52,12 @@ By default, data in the memory connector are transient.  When an application usi
 }
 ```
 I created some sample content and user so you can start right of:
-| Username | Password |
-| -------- | -------- |
-| James    | james    |
-| Bob      | bob      |
-| Mary     | mary     |
+
+ Username | Password 
+ -------- | -------- 
+ James    | james    
+ Bob      | bob      
+ Mary     | mary     
 
 ###Usefull commands
 - `lb-ng server/server.js client/www/lib/lb-services.js`to generate Loopback Service for AngularJS based on your project
