@@ -30,7 +30,7 @@ npm install
 ionic serve
 ```
 Open [localhost:8100](http://localhost:8100/) in your browser to view the app or get the (PhoneGap Developer App)[http://app.phonegap.com/] to run the app on your phone.
-Don't forget to change the api url in `client/www/lib/lb-services.js' to the IP of your local machine.
+Don't forget to change the api url in `client/www/lib/lb-services.js` to the IP of your local machine.
 ```
  var urlBase = "http://192.168.0.102:3000/api";
 ```
