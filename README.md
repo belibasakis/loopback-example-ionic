@@ -1,4 +1,4 @@
-# Loopback Example: ionic
+# Loopback Example: Ionic
 This example application demonstates how to use [LoopBack](http://loopback.io) with the [Ionic Framework](http://ionicframework.com/)
 ##Features
 Looper is a basic microblogging clone with following features:
