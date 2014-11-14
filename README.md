@@ -37,7 +37,30 @@ Open [localhost:8100](http://localhost:8100/) in your browser to view the app or
 - Optimize performence (less requests to server)
 - Add feature like edit, delete...
 
-##Usefull commands
+##Ionic
+All Ionic files are in the `client/www` folder. Documentation how this app works are inside the `*.js` files
+
+##Loopback
+By default, data in the memory connector are transient.  When an application using the memory connector exits, all model instances are lost.  To maintain data across application restarts, I specified a JSON file in which to store the data.
+`server/datasources.json``
+```
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "file": "memoryDb.json"
+  }
+}
+```
+I created some sample content and user so you can start right of:
+|Username|Password|
+|--------|--------|
+|James   |james   |
+|Bob     |bob     |
+|Mary    |mary    |
+
+
+###Usefull commands
 - `lb-ng server/server.js client/www/lib/lb-services.js`to generate Loopback Service for AngularJS based on your project
 - `lb-ng-doc client/www/lib/lb-services.js` show documentation for generated file
 
