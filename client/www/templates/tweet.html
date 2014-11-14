@@ -1,7 +1,7 @@
 <ion-view title="Tweet Detail" >
     <ion-content padding="false">
         <ion-item class="item-avatar-left">
-            <img src="img/ionic.png">
+            <img ng-src="{{tweet.avatar}}">
             <h2>{{tweet.ownerUsername}}<p class="date">{{tweet.date | timeDistance}}</p></h2>
             <p>
                 <!--<blockquote style="padding-top: 0px; padding-bottom: 0px; margin-bottom: 0px; text-align: justify;"></blockquote>-->
@@ -12,7 +12,7 @@
         <h4 style="margin-left: 10px">Comments</h4>
         <div class="list card">
             <div ng-repeat="comment in comments" class="item item-avatar" style="padding-top: 10px; padding-bottom:10px;">
-                <img src="img/ionic.png">
+                <img ng-src="{{comment.avatar}}">
                 <h2>{{comment.username}}<p class="date">{{comment.date | timeDistance}}</p></h2>
                 <p>{{comment.content}}</p>
             </div>

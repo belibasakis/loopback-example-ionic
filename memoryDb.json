@@ -1,1 +1,54 @@
-
+{
+  "ids": {
+    "User": 4,
+    "AccessToken": 9,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "user": 1,
+    "tweet": 6,
+    "comment": 6,
+    "like": 9,
+    "avatar": 4
+  },
+  "models": {
+    "User": {
+      "1": "{\"username\":\"James\",\"password\":\"$2a$10$YmCNbVtp.DS/UuapQ3bF8.hye6/TYP9uZiRyO8Npnh0yzQ44Hhtla\",\"email\":\"james@james.com\",\"created\":\"2014-11-13T23:57:43.064Z\",\"id\":1,\"avatar\":\"img/avatar/15.png\"}",
+      "2": "{\"username\":\"Bob\",\"password\":\"$2a$10$j4bSk8cG8Cq7rp1dZuzJYuwiC4mvtnMJZgcTxu76QFbrKAQcjq5Oe\",\"email\":\"bob@bob.com\",\"created\":\"2014-11-14T00:03:43.678Z\",\"id\":2,\"avatar\":\"img/avatar/11.png\"}",
+      "3": "{\"username\":\"Mary\",\"password\":\"$2a$10$hBxMdpN0PeZhVu0ZCgUZgO2kcU2gRYGgbibQ4W5JmYk/Bvz/yu9bK\",\"email\":\"mary@mary.com\",\"created\":\"2014-11-14T08:30:13.355Z\",\"id\":3,\"avatar\":\"img/avatar/8.png\"}"
+    },
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "user": {},
+    "tweet": {
+      "1": "{\"content\":\"First tweet!\",\"date\":\"2014-11-14T00:01:19.723Z\",\"ownerUsername\":\"James\",\"id\":1,\"ownerId\":1}",
+      "2": "{\"content\":\"Seccond tweet :D\",\"date\":\"2014-11-14T00:01:44.007Z\",\"ownerUsername\":\"James\",\"id\":2,\"ownerId\":1}",
+      "3": "{\"content\":\"This app is awesome!!\",\"date\":\"2014-11-14T00:02:42.985Z\",\"ownerUsername\":\"James\",\"id\":3,\"ownerId\":1}",
+      "4": "{\"content\":\"Check out strongloop.com! With StrongLoop API Server you  develop, deploy, secure and scale REST APIs at record speed.\",\"date\":\"2014-11-14T08:29:12.372Z\",\"ownerUsername\":\"Bob\",\"id\":4,\"ownerId\":2}",
+      "5": "{\"content\":\"Just discovered Ionic. A beautiful, open source front-end framework for developing hybrid mobile apps with HTML5.\",\"date\":\"2014-11-14T08:32:21.849Z\",\"ownerUsername\":\"Mary\",\"id\":5,\"ownerId\":3}"
+    },
+    "comment": {
+      "1": "{\"content\":\"I totally agree :D\",\"date\":\"2014-11-14T00:22:28.706Z\",\"username\":\"Bob\",\"id\":1,\"tweetId\":3,\"ownerId\":2}",
+      "2": "{\"content\":\"First comment !\",\"date\":\"2014-11-14T08:30:22.256Z\",\"username\":\"Mary\",\"id\":2,\"tweetId\":1,\"ownerId\":3}",
+      "3": "{\"content\":\"Do they offer an AngularJS SDK ?\",\"date\":\"2014-11-14T08:36:03.280Z\",\"username\":\"James\",\"id\":3,\"tweetId\":4,\"ownerId\":1}",
+      "4": "{\"content\":\"Yes they do and it's very easy to use too.\",\"date\":\"2014-11-14T08:37:20.399Z\",\"username\":\"Bob\",\"id\":4,\"tweetId\":4,\"ownerId\":2}",
+      "5": "{\"content\":\"Cool thanks :)\",\"date\":\"2014-11-14T08:37:53.016Z\",\"username\":\"James\",\"id\":5,\"tweetId\":4,\"ownerId\":1}"
+    },
+    "like": {
+      "1": "{\"id\":1,\"tweetId\":1,\"ownerId\":2}",
+      "2": "{\"id\":2,\"tweetId\":3,\"ownerId\":2}",
+      "3": "{\"id\":3,\"tweetId\":1,\"ownerId\":3}",
+      "4": "{\"id\":4,\"tweetId\":5,\"ownerId\":3}",
+      "5": "{\"id\":5,\"tweetId\":5,\"ownerId\":2}",
+      "7": "{\"id\":7,\"tweetId\":4,\"ownerId\":1}",
+      "8": "{\"id\":8,\"tweetId\":5,\"ownerId\":1}"
+    },
+    "avatar": {
+      "1": "{\"url\":\"img/avatar/15.png\",\"ownerId\":1,\"id\":1}",
+      "2": "{\"url\":\"img/avatar/11.png\",\"ownerId\":2,\"id\":2}",
+      "3": "{\"url\":\"img/avatar/8.png\",\"ownerId\":3,\"id\":3}"
+    }
+  }
+}

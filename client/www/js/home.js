@@ -86,18 +86,11 @@ angular.module('looper.home', ['lbServices'])
                      * Find avatar from the user
                      */
                     Avatar
-                        .find(
-                        {
-                            filter: {
-                                where: {
-                                    ownerId: values.ownerId
-                                }
-                            }
-                        })
+                        .find({filter: {where: {ownerId: values.ownerId}}})
                         .$promise
                         .then(function(res){
                             values.avatar = res[0].url;
-                        })
+                        });
 
                     /**
                      * Push these values to the tweets array
@@ -121,7 +114,7 @@ angular.module('looper.home', ['lbServices'])
             .finally(function () {
                 /**
                  * If there are no more tweets tell
-                 * ionic-infinityScroll that there is no more
+                 * ionic-infinityScroll that there are no more
                  * tweets to fetch
                  */
                 if ($scope.lastTweetId === 1) {
@@ -214,7 +207,6 @@ angular.module('looper.home', ['lbServices'])
         $scope.newTweet.ownerUsername = $scope.currentUser.username;
         Tweet.create($scope.newTweet,
             function (res) {
-                console.log(res);
                 delete $scope.newTweet;
                 $scope.refresh();
             },
