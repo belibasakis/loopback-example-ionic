@@ -11,7 +11,7 @@ angular.module('looper.register', ['lbServices', 'ionic'])
         /**
          * Redirect user to the app if already logged in
          */
-        if (User.getCachedCurrent()!==null) {
+        if (User.isAuthenticated()) {
             $location.path('tab/home');
         }
 
