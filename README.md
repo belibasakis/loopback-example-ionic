@@ -1,6 +1,6 @@
 # Loopback Example: Ionic
 This example application demonstates how to use [LoopBack](http://loopback.io) with the [Ionic Framework](http://ionicframework.com/)
-##Features
+## Features
 Looper is a basic microblogging clone with following features:
 - Users can register and login to the app
 - Only authorized user can see content
@@ -8,10 +8,10 @@ Looper is a basic microblogging clone with following features:
 - User can choose an avatar
 
 
-###Screenshots
+### Screenshots
 ![Alt text](screenshots.png)
 
-##Getting started
+## Getting started
 Before starting, makes sure you've followed [Getting Started with LoopBack](http://docs.strongloop.com/display/LB/Getting+started+with+LoopBack) to install Node and LoopBack.
 In adittion, you will need a basic understanding of:
  - [AngularJs](https://angularjs.org/)
@@ -35,15 +35,15 @@ Don't forget to change the api url in `client/www/lib/lb-services.js` to the IP 
  var urlBase = "http://192.168.0.102:3000/api";
 ```
 
-##ToDo
+## ToDo
 - Implement Passport.Js for FacebookAuth
 - Optimize performence (less requests to server)
 - Add feature like edit, delete...
 
-##Ionic
+## Ionic
 All Ionic files are in the `client/www` folder. Documentation how this app works are inside the `*.js` files
 
-##Loopback
+## Loopback
 By default, data in the memory connector are transient.  When an application using the memory connector exits, all model instances are lost.  To maintain data across application restarts, I specified a JSON file in which to store the data.
 `server/datasources.json``
 ```
@@ -63,11 +63,11 @@ I created some sample content and user so you can start right of:
  Bob      | bob      
  Mary     | mary     
 
-###Usefull commands
+### Usefull commands
 - `lb-ng server/server.js client/www/lib/lb-services.js`to generate Loopback Service for AngularJS based on your project
 - `lb-ng-doc client/www/lib/lb-services.js` show documentation for generated file
 
-###Loopback Database Schema
+### Loopback Database Schema
 - `avatar`
   - id number 
   - url string
