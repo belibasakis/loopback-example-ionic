@@ -1,6 +1,6 @@
 angular.module('looper.login', ['lbServices', 'ionic'])
     .controller('LoginCtrl', function ($scope, User, $location, $ionicPopup) {
-        if (User.getCachedCurrent()!==null) {
+        if (User.isAuthenticated()) {
            $location.path('tab/home');
         }
         /**
